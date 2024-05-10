@@ -1,0 +1,47 @@
+{
+  "name": "official_exams_manager",
+  "version": "2024.5.1",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "22.3.27",
+    "electron-builder": "^24.13.3",
+    "javascript-obfuscator": "^4.1.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "csv-parser": "^3.0.0",
+    "electron-is-dev": "^3.0.1",
+    "electron-updater": "^6.1.8",
+    "excel-date-to-js": "^1.1.5",
+    "glob": "^10.3.12",
+    "lodash": "^4.17.21",
+    "sqlite3": "^5.0.8",
+    "systeminformation": "^5.22.0",
+    "xlsx": "^0.18.5"
+  },
+  "build": {
+    "appId": "com.gtf.official_exams_manager",
+    "asar": true,
+    "copyright": "Copyright © 2024 Guettaf Khaled",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/logo-ico.ico"
+    },
+    
+    "publish": {
+      "owner":"KHALED-gtf",
+    "provider": "github",
+    "releaseType": "release"  
+  }
+  },
+ 
+  "description": "to manage official exam  center ",
+  "author": "Khaled Guettaf"
+}
